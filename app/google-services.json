@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1044665346706",
+    "firebase_url": "https://road-safety-b918f-default-rtdb.firebaseio.com",
+    "project_id": "road-safety-b918f",
+    "storage_bucket": "road-safety-b918f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044665346706:android:30eaa289cecc2ad5dd144b",
+        "android_client_info": {
+          "package_name": "com.example.mapapp1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044665346706-nklce36n59cppvn8lmidg31n87ra0p8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTh_udhHck-eKuUIaYPZiDWLrLcxSPe3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044665346706-nklce36n59cppvn8lmidg31n87ra0p8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
