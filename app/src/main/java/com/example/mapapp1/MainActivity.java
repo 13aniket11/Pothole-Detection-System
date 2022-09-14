@@ -77,8 +77,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             @Override
             public void onClick(View v) {
                 flg=1;
-//                status.setText("Connected");
-//                status.setTextColor(Color.parseColor("#008037"));
+                status.setText("Connected");
+                status.setTextColor(Color.parseColor("#008037"));
             }
         });
         stop.setOnClickListener(new View.OnClickListener() {
@@ -92,11 +92,13 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
     @Override
     public void onSensorChanged(SensorEvent event) {
-//        if (event.sensor.getType()==Sensor.TYPE_ACCELEROMETER) {
-//            status.setText("\n\n\n\n\n\n\n\n\n\n\n\nACC\n"+event.values[0] + "\n" + event.values[1] + "\n" + event.values[2]);
-//        }
-        if(event.sensor.getType() == Sensor.TYPE_GYROSCOPE && (event.values[0] > 5f || event.values[0] < -5f || event.values[1] > 5f || event.values[1] < -5f || event.values[2] > 5f || event.values[2] < -5f)){
+//        if (event.sensor.getType()==Sensor.TYPE_ACCELEROMETER && (event.values[0] > 20f || event.values[0] < -20f || event.values[1] > 20f || event.values[1] < -20f || event.values[2] > 20f || event.values[2] < -20f)) {
+//            flg=2;
 //            status.setText(event.values[0] + "\n" + event.values[1] + "\n" + event.values[2]);
+//        }
+        if(event.sensor.getType() == Sensor.TYPE_GYROSCOPE && flg==1 && (event.values[0] > 5f || event.values[0] < -5f || event.values[1] > 5f || event.values[1] < -5f || event.values[2] > 5f || event.values[2] < -5f)){
+//            status.setText(event.values[0] + "\n" + event.values[1] + "\n" + event.values[2]);
+//            flg=1;
             getCurrentLocation();
         }
     }

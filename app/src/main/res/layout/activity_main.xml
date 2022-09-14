@@ -19,11 +19,11 @@
         android:id="@+id/start"
         android:layout_width="156dp"
         android:layout_height="79dp"
-        android:textSize="20dp"
-        android:backgroundTint="#00FF00"
         android:layout_centerInParent="true"
         android:layout_weight="1"
-        android:text="Start" />
+        android:backgroundTint="#00FF00"
+        android:text="Start"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/stop"
